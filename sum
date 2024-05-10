@@ -1,0 +1,14 @@
+Question:
+Given two numbers A and B. Your task is to return the sum of A and B.
+
+Solution:
+class Solution{   
+public:
+    int addition(int A, int B){
+        int s=0;
+        s=A+B;
+        return s;
+    }
+};
+Explaination:
+Declare a variable "s".Store sum of A and B in s and return s.
