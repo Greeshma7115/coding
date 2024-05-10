@@ -1,0 +1,22 @@
+Question:
+Given a positive integer N, determine whether it is odd or even
+
+Solution:
+class Solution{   
+public:
+    string oddEven(int N){
+        // code here 
+      ;
+        if (N%2==0)
+        {
+         return "even";
+        }
+        else
+        {
+            return "odd";
+        }    
+    }
+};
+
+Explaination:
+Input is N and if N%2==0 return even else return odd.
