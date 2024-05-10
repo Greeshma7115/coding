@@ -1,0 +1,25 @@
+Question:
+You are given an integer N, reverse the digits of given number N, ensuring that the reversed number has no leading zeroes. Return the resulting reversed number.
+
+Solution:
+class Solution
+{
+    public long reverse_digit(long n)
+    {
+        long r,c=0;
+        long res=0;
+        while(n>0)
+        {
+            r=n%10;
+            res=res*10+r;
+            n=n/10;
+        }
+        return res;
+    }
+}
+
+Explaination:
+Declare the required varaibles of data type long as input is of type long and initialize them.
+Use a while loop until n>0 to find the reverse of the number.
+In the while loop, find the remainder of n using mod 10. To find reverse number, "res=res*10+r" where r is remainder and res is result.
+Divide n by 10 and return res.
