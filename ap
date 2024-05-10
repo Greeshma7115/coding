@@ -1,0 +1,20 @@
+Question:
+Given the first 2 terms a1 and a2 of an Arithmetic Series.Find the nth term of the series. 
+
+Solution:
+class Solution {
+  public:
+    int nthTermOfAP(int a1, int a2, int n) {
+        // code here
+        int d=a2-a1;
+        int an=0;
+        an=a1+(n-1)*d;
+        
+        return an;
+    }
+};
+
+Explaination:
+There is a basic formula to find nth term of an arithmetic progression. an=a1+(n-1)d where an is the nth term ,d is the common difference between two terms in the AP and n is the no of term we want to find.
+So using above formula , calculate the nth term after finding d=(a2-a1) and return an.
+
