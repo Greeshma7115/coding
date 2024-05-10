@@ -1,3 +1,15 @@
 Queston:
 Write a program to find the sum of the given series 1+2+3+ . . . . . .(N terms) 
 Solution:
+class Solution {
+  public:
+    long long seriesSum(int n) {
+        // code her
+     long long s=n;
+        return (s*(s+1))/2;
+    }
+};
+Explaination:
+Formula for sum of n numbers is (n*(n+1))/2.
+As the data type of input 'n' is integer, I declared an other variable 's' of data type long long to be able to return the output fro larger numbers.
+Using the above fromula I returned the sum of the numbers.
