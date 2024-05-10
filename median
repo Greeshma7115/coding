@@ -1,0 +1,26 @@
+Question:
+Given an array arr[] of N integers, calculate the median.In case of even number of elements, average of two middle elements is the median.
+
+Solution:
+class Solution
+{
+    public int find_median(int[] v)
+    {
+        // Code here
+        int n=v.length;
+        Arrays.sort(v);
+        if(n%2!=0)
+        return v[n/2];
+        else
+        {
+            return (v[n/2]+v[(n/2)-1])/2;
+        }
+    }
+}
+
+Explaination:
+Median is the mid value in a set of numbers.Here we are given an array , so we need to sort the array elements either in ascending or descending order to find the median.
+Variable n is declared to store the length of given array v[].
+Using default function "Arrays.sort(v)" I sorted the array and using "v.length" array length is calculated.
+If n is an odd number which means no of elements are odd then we have to returnv[n/2] as the median is the mid element of array.
+If n is an even number ,we have to   return (v[n/2]+v[(n/2)-1])/2 as instructed in the question to return the average value of two middle elements.
