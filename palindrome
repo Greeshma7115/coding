@@ -1,0 +1,31 @@
+Question:
+Given a number n.Find if the digit sum(or sum of digits) of n is a Palindrome number or not.
+
+Solution:
+class Solution {
+  public:
+    int isDigitSumPalindrome(int n) {
+        int r=0,i,s=0;
+        while(n>0)
+        {
+            r=n%10;
+            s=s+r;
+            n=n/10;
+        }
+        string str= to_string(s);
+        int l=str.length();
+        for(int i=0;i<(l/2);i++)
+        {
+            if(str[i]!=str[l-i-1])
+            return 0;
+        }
+        return 1;
+    }
+};
+
+Explaination:
+Palindrome may be a number or a word which is same when read from either side.
+Find the sum of the digits using a while loop by calculating reaminder and adding it to variable "s".
+To find whether result s is palindrome or not, convert it to string and find the length of the string using "str.length()".
+Iterate a for loop till l/2 and in the loop, if(str[i]!=str[l-i-1]) return 0 as str will not be a palindrome.
+Outside the for loop return 1 . If the statement inside for loop is not executed, then str is a palindrome.
