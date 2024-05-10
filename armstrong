@@ -1,0 +1,43 @@
+Question:
+For a given 3 digit number, find whether it is armstrong number or not.Return "Yes" if it is a armstrong number else return "No".
+
+Solution:
+class Solution {
+    static String armstrongNumber(int n){
+        // code here
+        int r,c=0,x=n,a=n;
+        double s=0;
+        while(n>0)
+        {
+            c++;
+            n=n/10;
+        }
+        r=0;
+        while(x>0)
+        {
+            r=x%10;
+            s=s+Math.pow(r,c);
+            x=x/10;
+        }
+        if(s==a)
+        {
+            return "Yes";
+            
+        }
+        else
+        return "No";
+        }
+}
+
+Explaination:
+An armstrong number is such that the number itself is obtained when each indiviual digit is raised to the power of no of digits in the given number, for example: 1^3+5^3+3^3=153.
+Decalre required varaibles. To count the no of digits in the given input, use a while loop until n>0 .
+In the loop, increment "c" and divide n by 10.
+In another  while loop find if n is aramstrong or not.In the loop ,find remainder of n which results the last digit of n . Use a default function "Math.pow(r,c)" to find the power of the digit raised to no of digits and store in "s" .
+Now divide n by 10 .
+If s equals a, given numbr is armstrong and return "Yes", else return "No".
+
+
+
+
+
