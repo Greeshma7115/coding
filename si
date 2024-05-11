@@ -1,0 +1,16 @@
+Question:
+Given three integers P,R and T, denoting Principal, Rate of Interest and Time period respectively.Compute the simple Interest.
+
+Solution:
+class Solution {
+  public:
+    double simpleInterest(int P, int R, int T) {
+        // code here
+         double  s;
+        
+        s= (P*T*R)/100.0;
+        return s;
+    }
+};
+
+Explaination: To return the output in floating numbers use a variable of type double. Calculate the simple interest using the formula (P*T*R)/100.0
