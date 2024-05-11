@@ -1,0 +1,18 @@
+Solution:
+class Solution{
+public:
+    long long nPr(int n, int r){
+     
+     long long nu=1;
+     for( int i=n,k=r;i>(n-r);i--,k--)
+     {
+         nu=nu*i;
+     }
+     return nu;
+    }
+    
+};
+
+Explaination:
+As npr=n!/(n-r)! means n*(n-1)*(n-2)*...*(n-r+1)
+Use a for loop to multiply the numbers till the required number and return the output.
