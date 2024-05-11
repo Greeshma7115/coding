@@ -1,0 +1,16 @@
+Question:
+Given 3 numbers A, B and C. Find the greatest number among them.
+
+Solution:
+class Solution {
+    int greatestOfThree(int A, int B, int C) {
+      if(A>B&&A>C)
+      return A;
+      else if(B>A&&B>C)
+      return B;
+      else return C;
+      
+    }
+}
+
+Explaination: Using flow control statements, compare the values of the given numbers and return the greater value.
