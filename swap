@@ -1,0 +1,20 @@
+Question:
+Swap given two numbers and print them. (Try to do it without a temporary variable.) and return it.
+
+Solution:
+class Solution{   
+public:
+    pair<int, int> get(int a, int b){
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        return {a,b};
+    }
+};
+
+Explaination: Swap the numbers without using other variables. 
+ex: a=4, b=5
+if a=a+b; then a=9
+So now if we subtract b from our new 'a' we will get value of original 'a', now store if in b.
+Similarly subtract  new 'b' from new 'a' and store in a, our varibales are swapped.
+As we are using get function, syntax t0 return the variables are return {a,b}.
